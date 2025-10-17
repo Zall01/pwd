@@ -1,0 +1,109 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eab6ff; /* pink muda */
+    color: #4b2c4b;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #a130b0; /* pink tua untuk kontras */
+    margin-top: 40px;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+form {
+    width: 60%;
+    margin: 30px auto;
+    background-color: #884e8f; /* pink lembut */
+    border: 2px solid #f599ff; /* border pink pastel */
+    border-radius: 12px;
+    padding: 30px 40px;
+    box-shadow: 0 4px 15px rgba(250, 182, 255, 0.4);
+}
+
+fieldset {
+    border: 1.5px solid #f68fff; /* pink medium */
+    border-radius: 8px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    background-color: #fae6ff; /* latar lebih lembut */
+}
+
+legend {
+    font-weight: bold;
+    color: #c033d6; /* pink fuchsia */
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 90%;
+    padding: 8px 10px;
+    border: 1px solid #f1adff; /* garis pink pastel */
+    border-radius: 6px;
+    margin-top: 5px;
+    font-size: 14px;
+    transition: 0.3s ease;
+    background-color: #ffffff; /* tetap putih agar jelas */
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #c033d6; /* pink fokus */
+    box-shadow: 0 0 6px rgba(195, 51, 214, 0.3);
+    outline: none;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+label {
+    margin-right: 15px;
+    font-size: 14px;
+    color: #482c4b;
+}
+
+input[type="submit"] {
+    display: block;
+    background-color: #e89eff; /* tombol pink muda */
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 25px;
+    margin: 25px auto 0;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    background-color: #bb33d6; /* pink tua saat hover */
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select {
+        width: 100%;
+    }
+}
